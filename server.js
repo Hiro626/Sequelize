@@ -4,7 +4,7 @@ import apiRoutes from './routes/apiRoutes.js';
 
 const app = express();
 
-const staticFolder = "public";
+const staticFolder = 'public';
 
 const PORT = process.env.PORT || 3000;
 

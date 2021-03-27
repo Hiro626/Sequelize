@@ -1,7 +1,8 @@
 async function getDiningData() {
     const endpoint = '/api/dining';
     const request = await fetch(endpoint);
-    const data = await request.json();
+    const dining = await request.json();
+    const diningData = dining.data
     console.log(data);
 
     const diningTable = document.querySelector('.table');
