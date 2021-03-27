@@ -1,14 +1,13 @@
 async function getDiningData() {
-    const endpoint = '/api/dining';
-    const request = await fetch(endpoint);
+    const request = await fetch('/api/dining');
     const dining = await request.json();
-    const diningData = dining.data
+    const diningData = dining.data;
     console.log(data);
 
     const diningTable = document.querySelector('.table');
-    // console.table(diningTable);
+    console.table(diningTable);
 
-    data.forEach((item) => { 
+    diningData.forEach((item) => { 
         const appendItem = document.createElement('tr');
         appendItem.innerHTML = `
             <td>${item.hall_id}</td>
