@@ -6,12 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <title>Takahiro Kawasaki's Lab 6</title>
+    <title>Takahiro Kawasaki's Lab</title>
 </head>
 <body>
     <section>
-        <h1> Takahiro Kawasaki's Lab 6</h1>
-        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+        <h1> Takahiro Kawasaki's Lab</h1>
+
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <table class="table" id="meals">
+            <h2>Meal Macros</h2>
+            <thead>
+                <tr class='header'>
+                    <th>Meal ID</th>
+                    <th>Meal Name</th>
+                    <th>Calories</th>
+                    <th>Serving Size</th>
+                    <th>Cholesterol</th>
+                    <th>Sodium</th>
+                    <th>Carbs</th>
+                    <th>Protein</th>
+                    <th>Fat</th>
+                </tr>
+            </thead>
+            <tbody class="body"></tbody>
+        </table>
+        
+        <!-- <table class="table is-bordered is-striped is-hoverable is-fullwidth">
             <h2>Campus Dining Hall Information</h2>
             <thead>
                 <tr>
@@ -21,8 +41,9 @@
                 </tr>
             </thead>
             <tbody class="table"></tbody>
-        </table>
+        </table> -->
     </section>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
